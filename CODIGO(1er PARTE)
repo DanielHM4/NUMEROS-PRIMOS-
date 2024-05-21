@@ -1,24 +1,23 @@
-    #include<stdio.h>
+#include<stdio.h>
 #include<stdlib.h>
 
 int  menu();
-void primos1();
-void primos_rango();
+void prim1();
+void prim_rango();
 int main(){
 	int op;
 	do{
-		system("pause");
-		system("cls");
+	
 		op=menu();
 		
 		if(op==1){
-			primos1();
+			prim1();
 			
 		}
 		else if(op==2){
-			primos_rango();
+			prim_rango();
 		}
-		else printf("Gracias por usarme :D");
+		else printf("Gracias por utilisarme");
 		
 	}while(op!=3);
 }
@@ -30,9 +29,8 @@ int menu(){
 	scanf("%d",&x);
 	return x;
 }
-void primos1(){
-	system("cls");
-	system("pause");
+void prim1(){
+	
 	int num;
     printf("Ingrese un numero: ");
     scanf("%d", &num);
@@ -52,7 +50,7 @@ void primos1(){
         }
     }
 }
-void primos_rango(){
+void prim_rango(){
 	system("pause");
 	system("cls");
 	int num1, num2, temp;
